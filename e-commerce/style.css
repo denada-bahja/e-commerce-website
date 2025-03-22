@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  padding: 0 auto;
   max-width: 100%;
   width: 1920px;
   font-family: "Josefin Sans";
@@ -13,7 +12,7 @@ body {
   font-weight: 400;
   text-align: center;
   line-height: 24.99px;
-  padding: 20px 0;
+  padding: 10px 0;
   text-wrap: wrap;
 }
 
@@ -24,63 +23,58 @@ header {
 .top-nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 50px 0 50px;
+  padding: 12px 40px;
   border-bottom: 1px solid #ccc;
 }
 
-.left-div ul,
-.right-div ul {
+.left-div {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  gap: 15px;
 }
 
-
-.left-div ul li,
-.right-div ul li {
-  margin: 0 7px;
-  font-size: 17px;
-  font-weight: 700;
-
+.store-locator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.left-div ul li a,
-.right-div ul li a {
-  text-decoration: none;
-  color: #000000;
+.right-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right-div img {
+  height: auto;
 }
 
 .bottom-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.bottom-nav>div {
+  display: flex;
   align-items: center;
-  padding: 20px 50px;
+  gap: 30px;
+}
+
+.logo {
+  margin: 0 250px 0 160px;
 }
 
 .main-nav {
   display: flex;
-  transform: translateX(-100%);
+  align-items: column;
 }
 
-.main-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
+summary {
+  padding: 0 15px;
   margin: 0;
 }
 
-.main-nav ul li {
-  margin: 0 20px;
-}
-
-.main-nav ul li a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 28.32px;
-}
 
 
 .hero {
@@ -139,6 +133,7 @@ button {
 
 }
 
+
 .carousel-item p {
   margin: 0;
   font-size: 24px;
@@ -151,9 +146,9 @@ button {
 }
 
 .carousel-item img {
-  flex-shrink: 0;
-  width: 577;
-  height: 577;
+  object-fit: cover;
+  width: 577px;
+  height: 577px;
 }
 
 .arrow {
@@ -165,8 +160,7 @@ button {
   padding: 10px;
   cursor: pointer;
   font-size: 18px;
-  z-index: 1;
-  align-items: right;
+  z-index: 10;
 }
 
 .arrow.left {
@@ -221,7 +215,7 @@ button {
   border: 1px solid #fff;
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
-
+  padding: 2px 15px;
 }
 
 .featured-products {
@@ -283,11 +277,9 @@ button {
 
 .testimonial {
   background-color: #F9F9F9;
-  min-height: 385px;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
   margin: 0;
-  flex-wrap: wrap;
 }
 
 .title {
@@ -308,14 +300,6 @@ button {
   font-size: 18px;
   font-weight: 400;
   line-height: 50px;
-  margin: 0;
-
-}
-
-.nr {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 66px;
   margin: 0;
 
 }
@@ -385,6 +369,17 @@ footer {
 
 .rights {
   margin-top: 50px;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+}
+
+button:hover,
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 @media(max-width: 1500px) {
@@ -460,6 +455,12 @@ footer {
     font-size: 45px;
     line-height: 45px;
 
+  }
+
+  button:focus,
+  .arrow:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
   }
 
   .p3 {

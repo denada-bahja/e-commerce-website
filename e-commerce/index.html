@@ -9,51 +9,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <title>Test</title>
 </head>
 
 <body>
   <div class="promo-banner">
-    <p>Use this banner to advertise a special promotion &mdash; 20% off!</p>
+    <p>Use this banner to advertise a special promotion&mdash;20% off!</p>
   </div>
   <header>
-    <div class="top-nav">
+    <nav class="top-nav">
       <div class="left-div">
-        <ul>
-          <li><a href="#">Stitch Rewards</a></li>
-          <li><a href="#">Quick Order</a></li>
-          <li><img src="img/Symbol.svg" alt="Symbol" width="18px" height="16px"></li>
-          <li><a href="#">Store Locator</a></li>
-        </ul>
+        <span><strong>STITCH REWARDS</strong></span>
+        <span><strong>QUICK ORDER</strong></span>
+        <div class="store-locator">
+          <img src="img/Symbol.svg" alt="Store Locator" width="20">
+          <span><strong>STORE LOCATOR</strong></span>
+        </div>
       </div>
 
       <div class="right-div">
-        <ul>
-          <li><a href="#">CART</a></li>
-          <li><img src="img/pseudo.png" alt="icon"></li>
-          <li><a href="#">SIGN UP</a></li>
-          <li><img src="img/–.png" alt="icon"></li>
-          <li><a href="#">LOG IN</a></li>
-          <li><img src="img/Vector.png" alt="icon"></li>
-        </ul>
+        <span><strong>CART</strong></span>
+        <img src="img/pseudo.png" alt="icon">
+        <span><strong>SIGN UP</strong></span>
+        <img src="img/–.png" alt="icon">
+        <span><strong>LOG IN</strong></span>
+        <img src="img/Vector.png" alt="icon">
       </div>
-    </div>
+    </nav>
 
-    <div class="bottom-nav">
+    <nav class="bottom-nav">
       <div class="logo">
-        <img src="img/logo.png" alt="logo" style="width: 210px; height: 67.19px;">
+        <img src="img/logo.png" alt="logo" class="logo-img">
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">Top Thread</a></li>
-          <li><a href="#">Bobbins</a></li>
-          <li><a href="#">Stabilizer</a></li>
-          <li><a href="#">Displays</a></li>
-          <li><a href="#">Notions</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div>
+        <details class="main-nav">
+          <summary><strong>Top Thread</strong></summary>
+        </details>
+
+        <details class="main-nav">
+          <summary><strong>Bobbins</strong></summary>
+        </details>
+
+        <details class="main-nav">
+          <summary><strong>Stabilizer</strong></summary>
+        </details>
+
+        <details class="main-nav">
+          <summary><strong>Displays</strong></summary>
+        </details>
+
+        <details class="main-nav">
+          <summary><strong>Notions</strong></summary>
+        </details>
+      </div>
+    </nav>
   </header>
 
 
@@ -137,15 +146,15 @@
       <button class="swipe right">&#10095;</button>
     </section>
     <section class="testimonial">
-      <div class="testimonial-container">
+      <div>
         <p class="title">TESTIMONIALS</p>
         <p class="p3">As a machine quilter, I love the sheen of Glide and how it adds an extra special touch to my
           quilts. It's the perfect blend of beauty and strength. Not only do I love the thread, but I love working with
           Hab+Dash to bring out the best in my quilting. They have been an integral part of our Free Motion Quilting
           Challenges and helped meet our thread needs each time.
         </p>
-        <p class="autor"><b>-Angela Walters-</b></p>
-        <p class="nr">&#10094; 1/10 &#10095;</p>
+        <span class="autor">-Angela Walters-</span><br>
+        <span>&#10094; 1/10 &#10095;</span>
       </div>
     </section>
 
@@ -164,7 +173,6 @@
         <div class="footer-section">
           <h3>SUPPORT</h3>
           <ul>
-            <li><a href="#">Stitch Rewards</a></li>
             <li><a href="#">Stitch Rewards</a></li>
             <li><a href="#">Core Return Program</a></li>
             <li><a href="#">FAQs</a></li>
@@ -204,5 +212,6 @@
     </footer>
   </main>
 </body>
+<script src="script.js"></script>
 
 </html>
